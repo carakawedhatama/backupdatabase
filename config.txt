@@ -1,0 +1,1 @@
+/path/to/mysqldump#databaseHost#databasePort#databaseName#databaseUserName#databasePassword
