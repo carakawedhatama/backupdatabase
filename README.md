@@ -11,7 +11,9 @@ We put the database dump information in a textfile, separated with "#" symbol. T
 - Database's password
 
 We use the command-like function to execute the dumping file. The common command function to dump the database is more like this 
+
 `mysqldump -h[Host] -P[port] -u[Username] -p[Password] [database_name] --[options]`
+
 While in this code, we use the `os/exec` library to execute above command. Then we add some options such as :
 - `--events`, to include the Event Scheduler.
 - `--routines`, to include the Routines Function or Procedure.
